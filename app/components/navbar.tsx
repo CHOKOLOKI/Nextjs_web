@@ -1,19 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-// import logo from '../../public/img/logo.png'
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   return (
-    <div className="flexgap-10 lg:gap-20 justify-between">
-        <div className='flex gap-4 items-center flex-shrink-0'>
-            <button></button>
-            <Link to="/">
-                <img src={ require('../../public/img/logo.png')} className="h-6" alt="Logo" />
-            </Link>
+    <nav className="bg-gray-800 p-4">
+      <div className="container mx-auto flex items-center justify-between">
+        <div className="text-white font-bold">Your Logo</div>
+        <div className="flex space-x-4">
+          <a href="#" className="text-white hover:text-gray-300">
+            Home
+          </a>
+          <a href="#" className="text-white hover:text-gray-300">
+            Trending
+          </a>
+          <a href="#" className="text-white hover:text-gray-300">
+            Subscriptions
+          </a>
+          <a href="#" className="text-white hover:text-gray-300">
+            Library
+          </a>
+          {/* Add more links as needed */}
         </div>
-        <div></div>
-        <div></div>
-    </div>
+      </div>
+    </nav>
   );
 };
 
