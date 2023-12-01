@@ -42,12 +42,13 @@ nav {
     top: 60px; /* Adjust the top position as needed */
     left: 0;
     right: 0;
-    background-color: #FDF7E4; /* White background for mobile dropdown */
+    background-color: #BBAB8C; /* White background for mobile dropdown */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for mobile dropdown */
   }
 
   #links:hover {
-    background-color: #;
+    background-color: ##FDF7E4;
+    /* transition: ; */
   }
 
   #links.show {
