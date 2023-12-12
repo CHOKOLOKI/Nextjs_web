@@ -1,9 +1,7 @@
-/* Import Tailwind CSS */
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* Reset some default styles */
 body, h1, h2, h3, p {
   background-color: #FDF7E4;
   margin: 0;
@@ -25,37 +23,4 @@ nav {
 .container img {
   height: 2rem;
   width: 2rem;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #333; /* Dark gray text color */
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-  #links {
-    display: none; /* Hide navigation links by default on smaller screens */
-    flex-direction: column;
-    position: absolute;
-    top: 60px; /* Adjust the top position as needed */
-    left: 0;
-    right: 0;
-    background-color: #BBAB8C; /* White background for mobile dropdown */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for mobile dropdown */
-  }
-
-  #links:hover {
-    background-color: ##FDF7E4;
-    /* transition: ; */
-  }
-
-  #links.show {
-    display: flex; /* Show navigation links when the "show" class is present */
-  }
-
-  #links a {
-    padding: 1rem;
-  }
 }
